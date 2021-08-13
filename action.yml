@@ -1,0 +1,32 @@
+name: 'Changelog Updater'
+description: 'Automatically update a "Keep a Changelog" CHANGELOG with the latest release notes.'
+
+author: Stefan Zweifel <hello@stefanzweifel.io>
+
+inputs:
+  release-notes:
+    required: true
+    description: The release notes you want to add to your CHANGELOG. Should be markdown.
+  latest-version:
+    required: true
+    description: Semantic version number of the latest release. The value will be used as the heading text and as a parameter in the compare URL.
+  release-date:
+    required: true
+    description: The date the latest version has been released.
+  path-to-changelog:
+    required: false
+    default: CHANGELOG.md
+    description: Defaults to `CHANGELOG.md`. Path to CHANGELOG.md file.
+
+branding:
+  icon: copy
+  color: purple
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.release-notes }}
+    - ${{ inputs.latest-version }}
+    - ${{ inputs.release-date }}
+    - ${{ inputs.path-to-changelog }}

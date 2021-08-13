@@ -1,0 +1,8 @@
+#!/bin/sh -l
+
+php /changelog-updater update \
+--release-notes="$1" \
+--latest-version="$2" \
+--release-date="$3" \
+--path-to-changelog="$4" \
+--write
