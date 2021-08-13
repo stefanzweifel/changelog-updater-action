@@ -12,9 +12,9 @@ Don't want to use GitHub Actions? Checkout the [changelog-updater CLI](https://g
 
 ## Usage
 
-To use this Action, create a new `update-changelog.yaml` Workflow in your repository. The Workflow should be triggered, whenever a release is released.
+The Action is best used in a Workflow that listens to the `release`-event and the type `released`. This way, the name and body of your release will be added to the CHANGELOG.
 
-The following is an example Workflow you can copy and paste.
+The following is an example Workflow ready to be used.
 
 The Workflow checks out the default `main`-branch of your repository, updates the `./CHANGELOG.md`-file with the name and the contents of the just released release and commits the changes back to your repository using [git-auto-commit](https://github.com/stefanzweifel/git-auto-commit-action).
 
@@ -36,16 +36,11 @@ jobs:
         with:
           ref: main
 
-      - name: Get current date
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
-
       - name: Update Changelog
         uses: stefanzweifel/changelog-updater-action@v1
         with:
           release-notes: ${{ github.event.release.body }}
           latest-version: ${{ github.event.release.name }}
-          release-date: ${{ steps.date.outputs.date }}
 
       - name: Commit updated CHANGELOG
         uses: stefanzweifel/git-auto-commit-action@v4
