@@ -2,11 +2,11 @@
 
 A GitHub Action to automatically update a ["Keep a Changelog"](https://keepachangelog.com/) CHANGELOG with the latest release notes.
 
-The Action:
+The Action …
 
-- Automatically updates the `Unreleased`-heading to point to the compare view between the latest version and `HEAD`.
-- Adds a new second level heading for the new release.
-- Paste your release notes in the appropriate place in the `CHANGELOG.md`.
+- automatically updates the `Unreleased`-heading to point to the compare view between the latest version and `HEAD`.
+- adds a new second level heading for the new release.
+- pastes your release notes in the appropriate place in `CHANGELOG.md`.
 
 Don't want to use GitHub Actions? Checkout the [changelog-updater CLI](https://github.com/stefanzweifel/php-changelog-updater) that powers this Action.
 
