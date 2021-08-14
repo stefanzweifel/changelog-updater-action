@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1049e038b89a6ece155f7784c62f1d77",
+    "content-hash": "1f36ae3096372d4d3bf93cc85e11a4e4",
     "packages": [
         {
             "name": "dflydev/dot-access-data",
@@ -556,16 +556,16 @@
         },
         {
             "name": "wnx/changelog-updater",
-            "version": "v0.4.1",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stefanzweifel/php-changelog-updater.git",
-                "reference": "8564f9b403f9114ffdb09ccaefade3b1004dfe2e"
+                "reference": "4b6f86baf50b5d35b6d3933be2098a90d94c5b12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefanzweifel/php-changelog-updater/zipball/8564f9b403f9114ffdb09ccaefade3b1004dfe2e",
-                "reference": "8564f9b403f9114ffdb09ccaefade3b1004dfe2e",
+                "url": "https://api.github.com/repos/stefanzweifel/php-changelog-updater/zipball/4b6f86baf50b5d35b6d3933be2098a90d94c5b12",
+                "reference": "4b6f86baf50b5d35b6d3933be2098a90d94c5b12",
                 "shasum": ""
             },
             "require": {
@@ -612,11 +612,15 @@
             },
             "funding": [
                 {
+                    "url": "https://buymeacoff.ee/3oQ64YW",
+                    "type": "custom"
+                },
+                {
                     "url": "https://github.com/stefanzweifel",
                     "type": "github"
                 }
             ],
-            "time": "2021-08-14T09:39:59+00:00"
+            "time": "2021-08-14T10:00:37+00:00"
         },
         {
             "name": "wnx/commonmark-markdown-renderer",
