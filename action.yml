@@ -13,6 +13,7 @@ inputs:
   release-date:
     required: false
     description: The date the latest version has been released. Defaults to the current date.
+    default: null
   path-to-changelog:
     required: false
     default: CHANGELOG.md
