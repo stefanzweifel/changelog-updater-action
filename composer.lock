@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d389655d7e04a02e81c21b51696710b",
+    "content-hash": "1049e038b89a6ece155f7784c62f1d77",
     "packages": [
         {
             "name": "dflydev/dot-access-data",
-            "version": "v3.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dflydev/dflydev-dot-access-data.git",
-                "reference": "e04ff030d24a33edc2421bef305e32919dd78fc3"
+                "reference": "0992cc19268b259a39e86f296da5f0677841f42c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dflydev/dflydev-dot-access-data/zipball/e04ff030d24a33edc2421bef305e32919dd78fc3",
-                "reference": "e04ff030d24a33edc2421bef305e32919dd78fc3",
+                "url": "https://api.github.com/repos/dflydev/dflydev-dot-access-data/zipball/0992cc19268b259a39e86f296da5f0677841f42c",
+                "reference": "0992cc19268b259a39e86f296da5f0677841f42c",
                 "shasum": ""
             },
             "require": {
@@ -77,9 +77,9 @@
             ],
             "support": {
                 "issues": "https://github.com/dflydev/dflydev-dot-access-data/issues",
-                "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.0"
+                "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.1"
             },
-            "time": "2021-01-01T22:08:42+00:00"
+            "time": "2021-08-13T13:06:58+00:00"
         },
         {
             "name": "league/commonmark",
@@ -556,16 +556,16 @@
         },
         {
             "name": "wnx/changelog-updater",
-            "version": "v0.3.0",
+            "version": "v0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stefanzweifel/php-changelog-updater.git",
-                "reference": "2a95241aceee432e238049c65a76e4a446a61685"
+                "reference": "01755f6171b2157d4d16c65250429f4d55264f5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefanzweifel/php-changelog-updater/zipball/2a95241aceee432e238049c65a76e4a446a61685",
-                "reference": "2a95241aceee432e238049c65a76e4a446a61685",
+                "url": "https://api.github.com/repos/stefanzweifel/php-changelog-updater/zipball/01755f6171b2157d4d16c65250429f4d55264f5a",
+                "reference": "01755f6171b2157d4d16c65250429f4d55264f5a",
                 "shasum": ""
             },
             "require": {
@@ -616,7 +616,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-08-12T18:23:31+00:00"
+            "time": "2021-08-14T07:58:49+00:00"
         },
         {
             "name": "wnx/commonmark-markdown-renderer",

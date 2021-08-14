@@ -1,6 +1,6 @@
 {
     "require": {
-        "wnx/changelog-updater": "^0.3.0"
+        "wnx/changelog-updater": "^0"
     },
     "scripts": {
         "build": "cp ./vendor/bin/changelog-updater ./changelog-updater"

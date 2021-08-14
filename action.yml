@@ -11,8 +11,8 @@ inputs:
     required: true
     description: Semantic version number of the latest release. The value will be used as the heading text and as a parameter in the compare URL.
   release-date:
-    required: true
-    description: The date the latest version has been released.
+    required: false
+    description: The date the latest version has been released. Defaults to the current date.
   path-to-changelog:
     required: false
     default: CHANGELOG.md

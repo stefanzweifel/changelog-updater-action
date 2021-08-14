@@ -39,8 +39,8 @@ jobs:
       - name: Update Changelog
         uses: stefanzweifel/changelog-updater-action@v1
         with:
-          release-notes: ${{ github.event.release.body }}
           latest-version: ${{ github.event.release.name }}
+          release-notes: ${{ github.event.release.body }}
 
       - name: Commit updated CHANGELOG
         uses: stefanzweifel/git-auto-commit-action@v4
