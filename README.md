@@ -60,7 +60,7 @@ Checkout [`action.yml`](https://github.com/stefanzweifel/changelog-updater-actio
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/stefanzweifel/changelog-updater-action/tags).
 
-We also provide major version tags to make it easier to always use the latest release of a major version. For example you can use `stefanzweifel/git-auto-commit-action@v1` to always use the latest release of the current major version.
+We also provide major version tags to make it easier to always use the latest release of a major version. For example you can use `stefanzweifel/changelog-updater-action@v1` to always use the latest release of the current major version.
 (More information about this [here](https://help.github.com/en/actions/building-actions/about-actions#versioning-your-action).)
 
 ## Credits
