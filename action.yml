@@ -1,5 +1,5 @@
 name: 'Changelog Updater'
-description: 'Automatically update a "Keep a Changelog" CHANGELOG with the latest release notes.'
+description: 'Automatically update a CHANGELOG with the latest release notes.'
 
 author: Stefan Zweifel <hello@stefanzweifel.io>
 
@@ -9,7 +9,7 @@ inputs:
     description: The release notes you want to add to your CHANGELOG. Should be markdown.
   latest-version:
     required: true
-    description: Semantic version number of the latest release. The value will be used as the heading text and as a parameter in the compare URL.
+    description: Semantic version number of the latest release. The value will be used as a heading text.
   release-date:
     required: false
     description: The date the latest version has been released. Defaults to the current date.
