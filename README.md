@@ -1,12 +1,13 @@
-# changelog-updater Action.
+# changelog-updater Action
 
-A GitHub Action to automatically update a ["Keep a Changelog"](https://keepachangelog.com/) CHANGELOG with the latest release notes.
+A GitHub Action to update a changelog with the latest release notes.
 
 The Action …
 
-- automatically updates the `Unreleased`-heading to point to the compare view between the latest version and `HEAD`.
-- adds a new second level heading for the new release.
-- pastes your release notes in the appropriate place in `CHANGELOG.md`.
+- adds a new second level heading for the new release
+- pastes your release notes in the appropriate place in `CHANGELOG.md`
+
+*If your changelog follows the ["Keep a Changelog"](https://keepachangelog.com/) format and contains an "Unreleased"-heading, the Action will update the heading to point to the compare view between the latest version and `HEAD`. (Read more about this [here](https://github.com/stefanzweifel/php-changelog-updater#expected-changelog-formats))*
 
 Don't want to use GitHub Actions? Checkout the [changelog-updater CLI](https://github.com/stefanzweifel/php-changelog-updater) that powers this Action.
 
@@ -55,6 +56,30 @@ To generate the release notes automatically for you, I can recommend using the [
 ## Inputs
 
 Checkout [`action.yml`](https://github.com/stefanzweifel/changelog-updater-action/blob/main/action.yml) for a full list of supported inputs.
+
+## Expected Changelog Formats
+
+At minimum, the Action requires an empty `CHANGELOG.md` file to exist in your repository.
+When executed, the Action will place the release notes at the bottom of the document.
+If your changelog already contains a **second level heading**, the Action will put the release notes above previous release notes in the document.
+
+Your changelog will look something like this:
+
+```md
+# Changelog
+
+## v1.1.0 - 2021-02-01
+
+### Added
+
+- New Feature A
+
+## v1.0.0 - 2021-01-01
+
+- Initial Release
+```
+
+If you want to learn more on how the Action determines the place for the release notes, read the the [notes in the README of the CLI](https://github.com/stefanzweifel/php-changelog-updater#expected-changelog-formats) that powers this Action.
 
 ## Versioning
 
