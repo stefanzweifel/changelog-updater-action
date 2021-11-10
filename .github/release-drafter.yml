@@ -3,6 +3,9 @@ tag-template: 'v$RESOLVED_VERSION'
 template: |
   # What's Changed
   $CHANGES
+  
+change-template: '- $TITLE ([#$NUMBER](https://github.com/stefanzweifel/changelog-updater-action/pull/$NUMBER))'
+
 categories:
   - title: Added
     labels:
