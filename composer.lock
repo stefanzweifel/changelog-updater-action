@@ -338,16 +338,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v3.2.5",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "9cd80396ca58d7969ab44fc7afcf03624dfa526e"
+                "reference": "2f261e55bd6a12057442045bf2c249806abc1d02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/9cd80396ca58d7969ab44fc7afcf03624dfa526e",
-                "reference": "9cd80396ca58d7969ab44fc7afcf03624dfa526e",
+                "url": "https://api.github.com/repos/nette/utils/zipball/2f261e55bd6a12057442045bf2c249806abc1d02",
+                "reference": "2f261e55bd6a12057442045bf2c249806abc1d02",
                 "shasum": ""
             },
             "require": {
@@ -358,7 +358,7 @@
             },
             "require-dev": {
                 "nette/tester": "~2.0",
-                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan": "^1.0",
                 "tracy/tracy": "^2.3"
             },
             "suggest": {
@@ -417,9 +417,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v3.2.5"
+                "source": "https://github.com/nette/utils/tree/v3.2.6"
             },
-            "time": "2021-09-20T10:50:11+00:00"
+            "time": "2021-11-24T15:47:23+00:00"
         },
         {
             "name": "psr/event-dispatcher",
@@ -693,16 +693,16 @@
         },
         {
             "name": "wnx/changelog-updater",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stefanzweifel/php-changelog-updater.git",
-                "reference": "266b096f59254f009a8242e1c41077e083c2cd29"
+                "reference": "a01f897d0092e51cb13bac34c5756ac304a69d9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefanzweifel/php-changelog-updater/zipball/266b096f59254f009a8242e1c41077e083c2cd29",
-                "reference": "266b096f59254f009a8242e1c41077e083c2cd29",
+                "url": "https://api.github.com/repos/stefanzweifel/php-changelog-updater/zipball/a01f897d0092e51cb13bac34c5756ac304a69d9b",
+                "reference": "a01f897d0092e51cb13bac34c5756ac304a69d9b",
                 "shasum": ""
             },
             "require": {
@@ -758,20 +758,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-07T10:29:23+00:00"
+            "time": "2021-11-25T15:12:37+00:00"
         },
         {
             "name": "wnx/commonmark-markdown-renderer",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stefanzweifel/commonmark-markdown-renderer.git",
-                "reference": "06ce2c7bb214d2c97253633e3c6182a06bb37311"
+                "reference": "f5f4d05fe16681a4eabfa8607f00ae5a7cebac6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefanzweifel/commonmark-markdown-renderer/zipball/06ce2c7bb214d2c97253633e3c6182a06bb37311",
-                "reference": "06ce2c7bb214d2c97253633e3c6182a06bb37311",
+                "url": "https://api.github.com/repos/stefanzweifel/commonmark-markdown-renderer/zipball/f5f4d05fe16681a4eabfa8607f00ae5a7cebac6d",
+                "reference": "f5f4d05fe16681a4eabfa8607f00ae5a7cebac6d",
                 "shasum": ""
             },
             "require": {
@@ -811,7 +811,7 @@
             ],
             "support": {
                 "issues": "https://github.com/stefanzweifel/commonmark-markdown-renderer/issues",
-                "source": "https://github.com/stefanzweifel/commonmark-markdown-renderer/tree/v1.0.1"
+                "source": "https://github.com/stefanzweifel/commonmark-markdown-renderer/tree/v1.0.2"
             },
             "funding": [
                 {
@@ -819,7 +819,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-08-07T15:42:49+00:00"
+            "time": "2021-11-25T14:56:46+00:00"
         }
     ],
     "packages-dev": [],
