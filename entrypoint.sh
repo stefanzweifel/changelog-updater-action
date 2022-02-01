@@ -5,4 +5,5 @@ php /changelog-updater update \
 --latest-version="$2" \
 --release-date="$3" \
 --path-to-changelog="$4" \
+--compare-url-target-revision="$5"
 --write

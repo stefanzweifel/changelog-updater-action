@@ -18,6 +18,10 @@ inputs:
     required: false
     default: CHANGELOG.md
     description: Defaults to `CHANGELOG.md`. Path to CHANGELOG.md file.
+  compare-url-target-revision:
+    required: false
+    default: HEAD
+    description: Target revision used in compare URL inside a possible "Unreleased" heading.
 
 branding:
   icon: copy
@@ -31,3 +35,4 @@ runs:
     - ${{ inputs.latest-version }}
     - ${{ inputs.release-date }}
     - ${{ inputs.path-to-changelog }}
+    - ${{ inputs.compare-url-target-revision }}
