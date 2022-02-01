@@ -3,6 +3,6 @@
         "wnx/changelog-updater": "^1.0"
     },
     "scripts": {
-        "build": "cp ./vendor/bin/changelog-updater ./changelog-updater"
+        "build": "cp ./vendor/wnx/changelog-updater/builds/changelog-updater ./changelog-updater"
     }
 }
