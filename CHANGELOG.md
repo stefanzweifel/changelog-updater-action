@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.2.0...HEAD)
 
 <!-- New Release notes will be placed here automatically -->
+## [v1.2.1](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.2.0...v1.2.1) - 2022-02-01
+
+## Fixed
+
+- Fix `entrypoint.sh` file
+
 ## [v1.2.0](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.1.1...v1.2.0) - 2022-02-01
 
 ## Added
