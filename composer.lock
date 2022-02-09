@@ -756,16 +756,16 @@
         },
         {
             "name": "wnx/changelog-updater",
-            "version": "v1.2.2",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stefanzweifel/php-changelog-updater.git",
-                "reference": "b239508ff6be4cc1f7cc16c16680c1d8a4381b9c"
+                "reference": "556b8278b042b435c1e25d58c2eeb4d68109ad6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefanzweifel/php-changelog-updater/zipball/b239508ff6be4cc1f7cc16c16680c1d8a4381b9c",
-                "reference": "b239508ff6be4cc1f7cc16c16680c1d8a4381b9c",
+                "url": "https://api.github.com/repos/stefanzweifel/php-changelog-updater/zipball/556b8278b042b435c1e25d58c2eeb4d68109ad6f",
+                "reference": "556b8278b042b435c1e25d58c2eeb4d68109ad6f",
                 "shasum": ""
             },
             "require": {
@@ -776,7 +776,7 @@
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.0",
-                "laravel-zero/framework": "^8.8",
+                "laravel-zero/framework": "^9.0",
                 "mockery/mockery": "^1.4.3",
                 "pestphp/pest": "^1.3",
                 "vimeo/psalm": "^4.8"
@@ -821,7 +821,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-09T19:09:05+00:00"
+            "time": "2022-02-09T20:06:29+00:00"
         },
         {
             "name": "wnx/commonmark-markdown-renderer",
