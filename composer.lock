@@ -641,12 +641,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php80\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -756,16 +756,16 @@
         },
         {
             "name": "wnx/changelog-updater",
-            "version": "v1.2.1",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stefanzweifel/php-changelog-updater.git",
-                "reference": "5b20b73690f6c48f16fcc2a52fd95c50e0ccbc24"
+                "reference": "b239508ff6be4cc1f7cc16c16680c1d8a4381b9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefanzweifel/php-changelog-updater/zipball/5b20b73690f6c48f16fcc2a52fd95c50e0ccbc24",
-                "reference": "5b20b73690f6c48f16fcc2a52fd95c50e0ccbc24",
+                "url": "https://api.github.com/repos/stefanzweifel/php-changelog-updater/zipball/b239508ff6be4cc1f7cc16c16680c1d8a4381b9c",
+                "reference": "b239508ff6be4cc1f7cc16c16680c1d8a4381b9c",
                 "shasum": ""
             },
             "require": {
@@ -821,7 +821,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-01T19:19:55+00:00"
+            "time": "2022-02-09T19:09:05+00:00"
         },
         {
             "name": "wnx/commonmark-markdown-renderer",
