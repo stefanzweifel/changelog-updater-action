@@ -63,7 +63,9 @@ The following workflow is a bit more advanced. It …
 - pushes the created commit to the target branch of the commit
 
 <details>
-<summary>update-changelog.yaml</summary>
+  
+<summary>Show update-changelog.yaml</summary>
+  
 ```yaml
 # .github/workflows/update-changelog.yaml
 name: "Update Changelog"
@@ -109,6 +111,7 @@ jobs:
           commit_message: Update CHANGELOG
           file_pattern: CHANGELOG.md
 ```
+  
 </details>
 
 ## Inputs
