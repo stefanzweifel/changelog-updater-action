@@ -54,6 +54,63 @@ jobs:
 
 To generate the release notes automatically for you, I can recommend using the [release-drafter](https://github.com/release-drafter/release-drafter) Action. 
 
+### Advanced Usage
+
+The following workflow is a bit more advanced. It …
+
+- extracts the exact release date from the git tag
+- uses the target branch of the release in the "Unreleased" compare URL
+- pushes the created commit to the target branch of the commit
+
+<details>
+<summary>update-changelog.yaml</summary>
+```yaml
+# .github/workflows/update-changelog.yaml
+name: "Update Changelog"
+
+on:
+  release:
+    types: [released]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          # Fetch entire history of repository to ensure relase date can be
+          # extracted from commit of the given tag.
+          fetch-depth: 0
+          # Checkout target branch of this release. Ensures that the CHANGELOG
+          # is not out of date.
+          ref: ${{ github.event.release.target_commitish }}
+
+      - name: Extract release date from git tag
+        id: release_date
+        run: |
+          echo "::set-output name=date::$(git log -1 --date=short --format=%ad '${{ github.event.release.tag_name }}')"
+
+      - name: Update Changelog
+        uses: stefanzweifel/changelog-updater-action@v1
+        with:
+          # Pass extracted release date, release notes and version to the Action.
+          release-date: ${{ steps.release_date.outputs.date }}
+          release-notes: ${{ github.event.release.body }}
+          latest-version: ${{ github.event.release.tag_name }}
+          compare-url-target-revision: ${{ github.event.release.target_commitish }}
+
+      - name: Commit updated CHANGELOG
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          # Push updated CHANGELOG to release target branch.
+          branch: ${{ github.event.release.target_commitish }}
+          commit_message: Update CHANGELOG
+          file_pattern: CHANGELOG.md
+```
+</details>
+
 ## Inputs
 
 Checkout [`action.yml`](https://github.com/stefanzweifel/changelog-updater-action/blob/main/action.yml) for a full list of supported inputs.
