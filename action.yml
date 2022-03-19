@@ -23,6 +23,12 @@ inputs:
     default: HEAD
     description: Target revision used in compare URL inside a possible "Unreleased" heading.
 
+outputs:
+  release_compare_url:
+    description: The generated compare URL for the just created relase. For example https://github.com/org/repo/compare/v1.0.0...v1.1.0
+  unreleased_compare_url:
+    description: The generated compare URL between the latest version and the target revision. For example https://github.com/org/repo/compare/v1.0.0...HEAD
+
 branding:
   icon: copy
   color: purple
