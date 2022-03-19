@@ -142,6 +142,42 @@ Your changelog will look something like this:
 
 If you want to learn more on how the Action determines the place for the release notes, read the the [notes in the README of the CLI](https://github.com/stefanzweifel/php-changelog-updater#expected-changelog-formats) that powers this Action.
 
+## Outputs
+
+The Action exposes some outputs you can further use in your workflow. The Action currently supports the following outputs:
+
+### `release_compare_url`
+The generated compare URL for the just created relase. For example `https://github.com/org/repo/compare/v1.0.0...v1.1.0`.
+The value is only available, if the Action could generate a compare URL based on the available CHANGELOG data.
+
+### `unreleased_compare_url`
+The generated compare URL between the latest version and the target revision. For example `https://github.com/org/repo/compare/v1.0.0...HEAD`.
+The value is only available, if the Action could generate a compare URL based on the available CHANGELOG data.
+
+See [`action.yml`](https://github.com/stefanzweifel/changelog-updater-action/blob/main/action.yml) for details.
+
+See workflow below on how to use these output values in your workflow.
+
+```yaml
+- name: Update Changelog
+  uses: stefanzweifel/changelog-updater-action@v1
+  id: "changelog-updater"
+  with:
+    # Pass extracted release date, release notes and version to the Action.
+    release-date: ${{ steps.release_date.outputs.date }}
+    release-notes: ${{ github.event.release.body }}
+    latest-version: ${{ github.event.release.tag_name }}
+    compare-url-target-revision: ${{ github.event.release.target_commitish }}
+
+- name: "release_compare_url"
+  # https://github.com/org/repo/compare/v1.0.0...v1.1.0
+  run: "echo ${{ steps.changelog-updater.outputs.release_compare_url }}"
+
+- name: "unreleased_compare_url"
+  # https://github.com/org/repo/compare/v1.0.0...HEAD
+  run: "echo ${{ steps.changelog-updater.outputs.unreleased_compare_url }}"
+```
+
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/stefanzweifel/changelog-updater-action/tags).
