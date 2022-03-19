@@ -6,4 +6,5 @@ php /changelog-updater update \
 --release-date="$3" \
 --path-to-changelog="$4" \
 --compare-url-target-revision="$5" \
+--github-actions-output \
 --write
