@@ -150,6 +150,9 @@ The Action exposes some outputs you can further use in your workflow. The Action
 The generated compare URL for the just created relase. For example `https://github.com/org/repo/compare/v1.0.0...v1.1.0`.
 The value is only available, if the Action could generate a compare URL based on the available CHANGELOG data.
 
+### `release_url_fragment`
+The URL fragment for the just created release. For example '#v100---2021-02-01'. You can use this to generate URLs that point to the newly created release in your CHANGELOG.
+
 ### `unreleased_compare_url`
 The generated compare URL between the latest version and the target revision. For example `https://github.com/org/repo/compare/v1.0.0...HEAD`.
 The value is only available, if the Action could generate a compare URL based on the available CHANGELOG data.
@@ -172,6 +175,10 @@ See workflow below on how to use these output values in your workflow.
 - name: "release_compare_url"
   # https://github.com/org/repo/compare/v1.0.0...v1.1.0
   run: "echo ${{ steps.changelog-updater.outputs.release_compare_url }}"
+
+- name: "release_url_fragment"
+  # #v100---2021-02-01
+  run: "echo ${{ steps.changelog-updater.outputs.release_url_fragment }}"
 
 - name: "unreleased_compare_url"
   # https://github.com/org/repo/compare/v1.0.0...HEAD
