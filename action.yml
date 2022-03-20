@@ -27,6 +27,8 @@ inputs:
 outputs:
   release_compare_url:
     description: The generated compare URL for the just created relase. For example https://github.com/org/repo/compare/v1.0.0...v1.1.0
+  release_url_fragment:
+    description: The URL fragment for the just created release. For example '#v100---2021-02-01'. You can use this to generate URLs that point to the newly created release in your CHANGELOG.
   unreleased_compare_url:
     description: The generated compare URL between the latest version and the target revision. For example https://github.com/org/repo/compare/v1.0.0...HEAD
 

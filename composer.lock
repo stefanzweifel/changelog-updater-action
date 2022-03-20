@@ -756,19 +756,20 @@
         },
         {
             "name": "wnx/changelog-updater",
-            "version": "v1.4.1",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stefanzweifel/php-changelog-updater.git",
-                "reference": "8c4fa385e4b76c79dbedd0710b50dffd810706ec"
+                "reference": "b9b96ae09ddb656817e6b574cbd14c0032567694"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefanzweifel/php-changelog-updater/zipball/8c4fa385e4b76c79dbedd0710b50dffd810706ec",
-                "reference": "8c4fa385e4b76c79dbedd0710b50dffd810706ec",
+                "url": "https://api.github.com/repos/stefanzweifel/php-changelog-updater/zipball/b9b96ae09ddb656817e6b574cbd14c0032567694",
+                "reference": "b9b96ae09ddb656817e6b574cbd14c0032567694",
                 "shasum": ""
             },
             "require": {
+                "ext-dom": "*",
                 "league/commonmark": "^2.0",
                 "php": "^8.0",
                 "webmozart/assert": "^1.10",
@@ -821,7 +822,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-20T06:30:18+00:00"
+            "time": "2022-03-20T10:14:38+00:00"
         },
         {
             "name": "wnx/commonmark-markdown-renderer",
