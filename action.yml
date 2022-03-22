@@ -6,7 +6,7 @@ author: Stefan Zweifel <hello@stefanzweifel.io>
 inputs:
   release-notes:
     required: false
-    description: The release notes you want to add to your CHANGELOG. Should be markdown.
+    description: The release notes you want to add to your CHANGELOG. Should be markdown. If not provided, the content between the Unreleased heading and the previous release heading is taken as release notes.
     default: null
   latest-version:
     required: true
