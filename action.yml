@@ -23,6 +23,10 @@ inputs:
     required: false
     default: HEAD
     description: Target revision used in compare URL inside a possible "Unreleased" heading.
+  heading-text:
+    required: false
+    default: null
+    description: Text used in the new release heading. Defaults to the value from latest-version.
 
 outputs:
   release_compare_url:
@@ -45,3 +49,4 @@ runs:
     - ${{ inputs.release-date }}
     - ${{ inputs.path-to-changelog }}
     - ${{ inputs.compare-url-target-revision }}
+    - ${{ inputs.heading-text }}
