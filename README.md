@@ -67,8 +67,12 @@ To generate the release notes automatically for you, I can recommend using the [
 The following workflow is a bit more advanced. It …
 
 - extracts the exact release date from the git tag
-- uses the target branch of the release in the "Unreleased" compare URL
+- optionally, uses the target branch of the release in the "Unreleased" compare URL
 - pushes the created commit to the target branch of the commit
+
+> **Warning**  
+> DO NOT enable the `compare-url-target-revision` option, if the target of your releases is the default branch (`ref/heads/main` or `main`).
+> The action would otherwise receive `refs/heads/main` as the target revision value and will generate invalid compare URL.
 
 <details>
   
@@ -109,7 +113,16 @@ jobs:
           release-date: ${{ steps.release_date.outputs.date }}
           release-notes: ${{ github.event.release.body }}
           latest-version: ${{ github.event.release.tag_name }}
-          compare-url-target-revision: ${{ github.event.release.target_commitish }}
+
+          # Optional
+          # If your project keeps seperate branches for major releases, and you want to point the compare URL
+          # in the "Unreleased"-heading to the corresponding major release branch (eg. `2.x`), then enable the option
+          # below.
+          # `compare-url-target-revision` will change how the compare URL is composed and will replace 
+          # `v2.0.1...HEAD` with `v2.0.1...2.x`.
+          # WARNING: When you select `main` when creating a new release, the value `refs/heads/main` 
+          # is passed to the Action which will generate an invalid compare URL.
+          # compare-url-target-revision: ${{ github.event.release.target_commitish }}
 
       - name: Commit updated CHANGELOG
         uses: stefanzweifel/git-auto-commit-action@v4
