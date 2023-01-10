@@ -40,7 +40,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.event.release.target_commitish }}
 
@@ -88,7 +88,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           # Fetch entire history of repository to ensure relase date can be
           # extracted from commit of the given tag.
