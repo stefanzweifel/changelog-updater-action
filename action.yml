@@ -1,7 +1,7 @@
 name: 'Changelog Updater'
 description: 'Automatically update a CHANGELOG with the latest release notes.'
 
-author: Stefan Zweifel <hello@stefanzweifel.io>
+author: Stefan Zweifel <stefan@stefanzweifel.dev>
 
 inputs:
   release-notes:
