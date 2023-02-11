@@ -72,7 +72,7 @@ The following workflow is a bit more advanced. It …
 
 > **Warning**  
 > DO NOT enable the `compare-url-target-revision` option, if the target of your releases is the default branch (`ref/heads/main` or `main`).
-> The action would otherwise receive `refs/heads/main` as the target revision value and will generate invalid compare URL.
+> The action would otherwise receive `refs/heads/main` as the target revision value and will generate invalid compare URLs.
 
 <details>
   
