@@ -66,6 +66,12 @@ jobs:
 
 To generate the release notes automatically for you, I can recommend using the [release-drafter](https://github.com/release-drafter/release-drafter) Action. 
 
+> **Note**   
+> When you use the `publish`-input of _release-drafter_ to immediately create the release, the `release`-event is probably not triggered due to a limitation of GitHub Actions.   
+> Please create a personl access token, add it as a secret to your repository and pass the token to the `release-drafter/release-drafter`-Action.
+> See [this discussion](https://github.com/stefanzweifel/changelog-updater-action/discussions/30) for mor details.
+
+
 ### Advanced Usage
 
 #### Use Tag Date as Release Date
