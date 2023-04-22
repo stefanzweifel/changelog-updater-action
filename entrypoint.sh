@@ -8,4 +8,5 @@ php /changelog-updater update \
 --compare-url-target-revision="$5" \
 --heading-text="$6" \
 --github-actions-output \
---write
+--write \
+--no-interaction
