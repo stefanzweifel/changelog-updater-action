@@ -27,6 +27,10 @@ inputs:
     required: false
     default: null
     description: Text used in the new release heading. Defaults to the value from latest-version.
+  hide-release-date:
+    required: false
+    default: null
+    description: Hide release date in the new release heading.
 
 outputs:
   release_compare_url:
@@ -50,3 +54,4 @@ runs:
     - ${{ inputs.path-to-changelog }}
     - ${{ inputs.compare-url-target-revision }}
     - ${{ inputs.heading-text }}
+    - ${{ inputs.hide-release-date }}
