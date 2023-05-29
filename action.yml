@@ -29,7 +29,7 @@ inputs:
     description: Text used in the new release heading. Defaults to the value from latest-version.
   hide-release-date:
     required: false
-    default: false
+    default: null
     description: Hide release date in the new release heading.
 
 outputs:
