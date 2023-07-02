@@ -8,6 +8,7 @@ php /changelog-updater update \
 --compare-url-target-revision="$5" \
 --heading-text="$6" \
 $( [ "$7" ] && echo "--hide-release-date" ) \
+$( [ "$8" ] && echo "--parse-github-usernames" ) \
 --github-actions-output \
 --write \
 --no-interaction

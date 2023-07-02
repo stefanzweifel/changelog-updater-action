@@ -31,6 +31,10 @@ inputs:
     required: false
     default: null
     description: Hide release date in the new release heading.
+  parse-github-usernames:
+    required: false
+    default: null
+    description: "Experimental: Find GitHub usernames in release notes and link to their profile."
 
 outputs:
   release_compare_url:
@@ -55,3 +59,4 @@ runs:
     - ${{ inputs.compare-url-target-revision }}
     - ${{ inputs.heading-text }}
     - ${{ inputs.hide-release-date }}
+    - ${{ inputs.parse-github-usernames }}
