@@ -12,12 +12,6 @@ The Action …
 Don't want to use GitHub Actions? Checkout the [changelog-updater CLI](https://github.com/stefanzweifel/php-changelog-updater) that powers this Action.
 Want to learn more about this Action? Read my [introduction blog post](https://stefanzweifel.io/posts/2021/11/13/introducing-the-changelog-updater-action).
 
-
-> **Note**  
-> This Action will emit warnings in your workflow logs regarding the `set-output` command until **2022-12-31**.   
-> The Action has already been [updated](https://github.com/stefanzweifel/php-changelog-updater/pull/30) to support the new syntax and will stop emitting a warning starting 2023-01-01.   
-> Please do not open issues regarding this issue.
-
 ## Usage
 
 The Action is best used in a Workflow that listens to the `release`-event and the type `released`. This way, the name and body of your release will be added to the CHANGELOG.
