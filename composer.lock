@@ -333,20 +333,20 @@
         },
         {
             "name": "nette/utils",
-            "version": "v4.0.0",
+            "version": "v4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "cacdbf5a91a657ede665c541eda28941d4b09c1e"
+                "reference": "9124157137da01b1f5a5a22d6486cb975f26db7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/cacdbf5a91a657ede665c541eda28941d4b09c1e",
-                "reference": "cacdbf5a91a657ede665c541eda28941d4b09c1e",
+                "url": "https://api.github.com/repos/nette/utils/zipball/9124157137da01b1f5a5a22d6486cb975f26db7e",
+                "reference": "9124157137da01b1f5a5a22d6486cb975f26db7e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0 <8.3"
+                "php": ">=8.0 <8.4"
             },
             "conflict": {
                 "nette/finder": "<3",
@@ -354,7 +354,7 @@
             },
             "require-dev": {
                 "jetbrains/phpstorm-attributes": "dev-master",
-                "nette/tester": "^2.4",
+                "nette/tester": "^2.5",
                 "phpstan/phpstan": "^1.0",
                 "tracy/tracy": "^2.9"
             },
@@ -414,9 +414,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v4.0.0"
+                "source": "https://github.com/nette/utils/tree/v4.0.1"
             },
-            "time": "2023-02-02T10:41:53+00:00"
+            "time": "2023-07-30T15:42:21+00:00"
         },
         {
             "name": "psr/event-dispatcher",
@@ -678,16 +678,16 @@
         },
         {
             "name": "wnx/changelog-updater",
-            "version": "v1.9.0",
+            "version": "v1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stefanzweifel/php-changelog-updater.git",
-                "reference": "2b0d38f563879816fb833c1ca4312187be442807"
+                "reference": "791906460ca0fdb58edbea86c13c193c607d5bce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefanzweifel/php-changelog-updater/zipball/2b0d38f563879816fb833c1ca4312187be442807",
-                "reference": "2b0d38f563879816fb833c1ca4312187be442807",
+                "url": "https://api.github.com/repos/stefanzweifel/php-changelog-updater/zipball/791906460ca0fdb58edbea86c13c193c607d5bce",
+                "reference": "791906460ca0fdb58edbea86c13c193c607d5bce",
                 "shasum": ""
             },
             "require": {
@@ -745,20 +745,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-02T07:48:40+00:00"
+            "time": "2023-08-01T07:12:31+00:00"
         },
         {
             "name": "wnx/commonmark-markdown-renderer",
-            "version": "v1.3.0",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stefanzweifel/commonmark-markdown-renderer.git",
-                "reference": "7285a1216c4aad6d14df38326c64b778a37daca3"
+                "reference": "2a0656a647eb290abf7a9531166fac77ddfcda09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefanzweifel/commonmark-markdown-renderer/zipball/7285a1216c4aad6d14df38326c64b778a37daca3",
-                "reference": "7285a1216c4aad6d14df38326c64b778a37daca3",
+                "url": "https://api.github.com/repos/stefanzweifel/commonmark-markdown-renderer/zipball/2a0656a647eb290abf7a9531166fac77ddfcda09",
+                "reference": "2a0656a647eb290abf7a9531166fac77ddfcda09",
                 "shasum": ""
             },
             "require": {
@@ -769,7 +769,6 @@
                 "friendsofphp/php-cs-fixer": "^3.0",
                 "phpunit/phpunit": "^10.0",
                 "rector/rector": "^0.15.17",
-                "spatie/ray": "^1.28",
                 "vimeo/psalm": "^5.7"
             },
             "type": "library",
@@ -799,7 +798,7 @@
             ],
             "support": {
                 "issues": "https://github.com/stefanzweifel/commonmark-markdown-renderer/issues",
-                "source": "https://github.com/stefanzweifel/commonmark-markdown-renderer/tree/v1.3.0"
+                "source": "https://github.com/stefanzweifel/commonmark-markdown-renderer/tree/v1.3.1"
             },
             "funding": [
                 {
@@ -807,7 +806,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-02-21T14:23:09+00:00"
+            "time": "2023-08-01T07:03:00+00:00"
         }
     ],
     "packages-dev": [],
