@@ -10,7 +10,7 @@ The Action …
 *If your changelog follows the ["Keep a Changelog"](https://keepachangelog.com/) format and contains an "Unreleased"-heading, the Action will update the heading to point to the compare view between the latest version and `HEAD`. (Read more about this [here](https://github.com/stefanzweifel/php-changelog-updater#expected-changelog-formats))*
 
 Don't want to use GitHub Actions? Checkout the [changelog-updater CLI](https://github.com/stefanzweifel/php-changelog-updater) that powers this Action.
-Want to learn more about this Action? Read my [introduction blog post](https://stefanzweifel.io/posts/2021/11/13/introducing-the-changelog-updater-action).
+Want to learn more about this Action? Read my [introduction blog post](https://stefanzweifel.dev/posts/2021/11/13/introducing-the-changelog-updater-action).
 
 ## Usage
 
