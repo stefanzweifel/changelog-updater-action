@@ -5,9 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.9.1...HEAD)
+## [Unreleased](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.10.0...HEAD)
 
 <!-- New Release notes will be placed here automatically -->
+## [v1.10.0](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.9.1...v1.10.0) - 2023-11-25
+
+### Added
+
+- Upgrade CLI to Support PHP 8.3 ([#42](https://github.com/stefanzweifel/changelog-updater-action/pull/42))
+
+### Changed
+
+- Update README with new versions of actions/checkout and git-auto-commit-action ([#41](https://github.com/stefanzweifel/changelog-updater-action/pull/41))
+
 ## [v1.9.1](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.9.0...v1.9.1) - 2023-08-01
 
 ### Fixed
