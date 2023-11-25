@@ -8,11 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.9.1...HEAD)
 
 <!-- New Release notes will be placed here automatically -->
-## [v1.2.1](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.2.0...v1.2.1) - 2022-02-01
+## [v1.9.1](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.9.0...v1.9.1) - 2023-08-01
 
-## Fixed
+### Fixed
 
-- Fix `entrypoint.sh` file
+- Upgrade changelog-updater CLI to latest version ([#38](https://github.com/stefanzweifel/changelog-updater-action/pull/38))
 
 ## [v1.9.1](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.9.0...v1.9.1) - 2023-08-01
 
@@ -92,6 +92,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Fix
 
 - Fix broken CLI binary
+
+## [v1.2.1](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.2.0...v1.2.1) - 2022-02-01
+
+## Fixed
+
+- Fix `entrypoint.sh` file
 
 ## [v1.2.0](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.1.1...v1.2.0) - 2022-02-01
 
