@@ -5,14 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.9.0...HEAD)
+## [Unreleased](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.9.1...HEAD)
 
 <!-- New Release notes will be placed here automatically -->
-## [v1.2.1](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.2.0...v1.2.1) - 2022-02-01
+## [v1.9.1](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.9.0...v1.9.1) - 2023-08-01
 
-## Fixed
+### Fixed
 
-- Fix `entrypoint.sh` file
+- Upgrade changelog-updater CLI to latest version ([#38](https://github.com/stefanzweifel/changelog-updater-action/pull/38))
 
 ## [v1.9.0](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.8.0...v1.9.0) - 2023-07-02
 
@@ -86,6 +86,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Fix
 
 - Fix broken CLI binary
+
+## [v1.2.1](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.2.0...v1.2.1) - 2022-02-01
+
+## Fixed
+
+- Fix `entrypoint.sh` file
 
 ## [v1.2.0](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.1.1...v1.2.0) - 2022-02-01
 
