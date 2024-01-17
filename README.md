@@ -18,7 +18,7 @@ The Action is best used in a Workflow that listens to the `release`-event and th
 
 The following is an example Workflow ready to be used.
 
-The Workflow checks out [the target branch of the release](https://docs.github.com/en/rest/reference/releases#create-a-release--parameters), updates the `./CHANGELOG.md`-file with the name and the contents of the just released release and commits the changes back to your repository using [git-auto-commit](https://github.com/stefanzweifel/git-auto-commit-action).
+The Workflow checks out [the target branch of the release](https://docs.github.com/en/rest/releases/releases#create-a-release--parameters), updates the `./CHANGELOG.md`-file with the name and the contents of the just released release and commits the changes back to your repository using [git-auto-commit](https://github.com/stefanzweifel/git-auto-commit-action).
 
 ```yaml
 # .github/workflows/update-changelog.yaml
