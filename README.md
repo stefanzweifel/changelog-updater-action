@@ -18,7 +18,7 @@ The Action is best used in a Workflow that listens to the `release`-event and th
 
 The following is an example Workflow ready to be used.
 
-The Workflow checks out [the target branch of the release](https://docs.github.com/en/rest/reference/releases#create-a-release--parameters), updates the `./CHANGELOG.md`-file with the name and the contents of the just released release and commits the changes back to your repository using [git-auto-commit](https://github.com/stefanzweifel/git-auto-commit-action).
+The Workflow checks out [the target branch of the release](https://docs.github.com/en/rest/releases/releases#create-a-release--parameters), updates the `./CHANGELOG.md`-file with the name and the contents of the just released release and commits the changes back to your repository using [git-auto-commit](https://github.com/stefanzweifel/git-auto-commit-action).
 
 ```yaml
 # .github/workflows/update-changelog.yaml
@@ -62,8 +62,8 @@ To generate the release notes automatically for you, I can recommend using the [
 
 > **Note**   
 > When you use the `publish`-input of _release-drafter_ to immediately create the release, the `release`-event is probably not triggered due to a limitation of GitHub Actions.   
-> Please create a personl access token, add it as a secret to your repository and pass the token to the `release-drafter/release-drafter`-Action.
-> See [this discussion](https://github.com/stefanzweifel/changelog-updater-action/discussions/30) for mor details.
+> Please create a personal access token, add it as a secret to your repository and pass the token to the `release-drafter/release-drafter`-Action.
+> See [this discussion](https://github.com/stefanzweifel/changelog-updater-action/discussions/30) for more details.
 
 
 ### Advanced Usage
@@ -98,7 +98,7 @@ jobs:
 
     permissions:
       # Give the default GITHUB_TOKEN write permission to commit and push the 
-      # updaetd CHANGELOG back to the repository.
+      # updated CHANGELOG back to the repository.
       # https://github.blog/changelog/2023-02-02-github-actions-updating-the-default-github_token-permissions-to-read-only/
       contents: write
 
@@ -106,7 +106,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          # Fetch entire history of repository to ensure relase date can be
+          # Fetch entire history of repository to ensure release date can be
           # extracted from commit of the given tag.
           fetch-depth: 0
           # Checkout target branch of this release. Ensures that the CHANGELOG
@@ -127,7 +127,7 @@ jobs:
           latest-version: ${{ github.event.release.tag_name }}
 
           # Optional
-          # If your project keeps seperate branches for major releases, and you want to point the compare URL
+          # If your project keeps separate branches for major releases, and you want to point the compare URL
           # in the "Unreleased"-heading to the corresponding major release branch (eg. `2.x`), then enable the option
           # below.
           # `compare-url-target-revision` will change how the compare URL is composed and will replace 
@@ -155,7 +155,7 @@ The workflow …
 
 - is manually triggered
 - builds a Java project
-- uses the content between the Unreleased and Previous Release heading as relase notes and updates the CHANGELOG.md
+- uses the content between the Unreleased and Previous Release heading as release notes and updates the CHANGELOG.md
 - commits the changes and pushes them to GitHub
 - creates a new GitHub release and points in the release notes to the right heading for the just released version
 
@@ -188,14 +188,14 @@ Your changelog will look something like this:
 - Initial Release
 ```
 
-If you want to learn more on how the Action determines the place for the release notes, read the the [notes in the README of the CLI](https://github.com/stefanzweifel/php-changelog-updater#expected-changelog-formats) that powers this Action.
+If you want to learn more on how the Action determines the place for the release notes, read the [notes in the README of the CLI](https://github.com/stefanzweifel/php-changelog-updater#expected-changelog-formats) that powers this Action.
 
 ## Outputs
 
 The Action exposes some outputs you can further use in your workflow. The Action currently supports the following outputs:
 
 ### `release_compare_url`
-The generated compare URL for the just created relase. For example `https://github.com/org/repo/compare/v1.0.0...v1.1.0`.
+The generated compare URL for the just created release. For example `https://github.com/org/repo/compare/v1.0.0...v1.1.0`.
 The value is only available, if the Action could generate a compare URL based on the available CHANGELOG data.
 
 ### `release_url_fragment`
