@@ -1,0 +1,44 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  # Run daily to catch changes in the php:*-cli-alpine base image.
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run action
+        id: changelog
+        uses: ./
+        with:
+          release-notes: |
+            ### Added
+
+            - New feature
+          latest-version: v1.1.0
+          release-date: '2021-02-01'
+          path-to-changelog: tests/fixtures/CHANGELOG.md
+
+      - name: Assert CHANGELOG was updated
+        run: |
+          cat tests/fixtures/CHANGELOG.md
+          grep -F '## [v1.1.0](https://github.com/org/repo/compare/v1.0.0...v1.1.0) - 2021-02-01' tests/fixtures/CHANGELOG.md
+          grep -F -- '- New feature' tests/fixtures/CHANGELOG.md
+          grep -F '## [Unreleased](https://github.com/org/repo/compare/v1.1.0...HEAD)' tests/fixtures/CHANGELOG.md
+
+      - name: Assert outputs are set
+        run: |
+          test "${{ steps.changelog.outputs.release_compare_url }}" = "https://github.com/org/repo/compare/v1.0.0...v1.1.0"
+          test "${{ steps.changelog.outputs.unreleased_compare_url }}" = "https://github.com/org/repo/compare/v1.1.0...HEAD"
+          test "${{ steps.changelog.outputs.release_url_fragment }}" = "#v110---2021-02-01"
