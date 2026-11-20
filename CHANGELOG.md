@@ -8,11 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.13.2...HEAD)
 
 <!-- New Release notes will be placed here automatically -->
-## [v1.13.2](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.13.0...v1.13.2) - 2026-11-20
+## [v1.13.2](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.13.1...v1.13.2) - 2026-11-20
 
 ### Fixed
 
 - Pin base image to PHP 8.5 and add tests workflow ([#54](https://github.com/stefanzweifel/changelog-updater-action/pull/54))
+
+## [v1.13.1](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.13.0...v1.13.1) - 2026-11-19
+
+### Fixed
+
+- Revert "Update CLI to v1.13 (#51)" ([#53](https://github.com/stefanzweifel/changelog-updater-action/pull/53))
 
 ## [v1.13.0](https://github.com/stefanzweifel/changelog-updater-action/compare/v1.12.0...v1.13.0) - 2026-11-17
 
